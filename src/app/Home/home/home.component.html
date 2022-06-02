@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-12">
+        <p>page:{{page1}}</p>
+        <p>per_page:{{per_page1}}</p>
+        <p>total:{{total_ArrayOfObj1}}</p>
+        <p>total_pages:{{totalpages1}}</p>
+        <p>url:{{supporturl1}}</p>
+        <p>text:{{supporttxt1}}</p>
+        <table *ngFor="let item of printed_Values">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Emil Id</th>
+                <th>Image src</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.avatar}}</td>
+                <td><img src="{{item.avatar}}" alt="Person pics"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <p>page:{{page2}}</p>
+        <p>per_page:{{per_page2}}</p>
+        <p>total:{{total_ArrayOfObj2}}</p>
+        <p>total_pages:{{totalpages2}}</p>
+        <p>url:{{supporturl2}}</p>
+        <p>text:{{supporttxt2}}</p>
+        <table *ngFor="let item of showdata">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Emil Id</th>
+                <th>Image src</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.avatar}}</td>
+                <td><img src="{{item.avatar}}" alt="Person pics"></td>
+            </tr>
+        </table>
+    </div>
+</div>
